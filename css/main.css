@@ -450,7 +450,6 @@ a:hover {
   -ms-animation: overlay 1.5s 1.5s forwards;
   animation: overlay 1.5s 1.5s forwards;
   background-attachment: fixed, fixed;
-  background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -1267,13 +1266,19 @@ a:hover {
 
 .donut {
   float: left;
-  width: 20%;
-  height: 20%;
+  width: 15%;
+  height: 15%;
 }
 
 .cat {
   float: right;
   padding-right: 25px;
-  width: 8%;
-  height: 8%;
+  width: 5%;
+  height: 5%;
+}
+
+.badjoke {
+  padding: auto;
+  color: rgb(0, 255, 0);
+  font-size: 50px;
 }
