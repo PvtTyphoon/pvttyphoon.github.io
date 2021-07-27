@@ -1267,13 +1267,13 @@ a:hover {
 
 .donut {
   float: left;
-  width: 25%;
-  height: 25%;
+  width: 20%;
+  height: 20%;
 }
 
 .cat {
   float: right;
   padding-right: 25px;
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
 }
