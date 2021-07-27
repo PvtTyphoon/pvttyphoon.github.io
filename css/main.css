@@ -1264,3 +1264,9 @@ a:hover {
 .info {
   float: right;
 }
+
+.nyan {
+  float: left;
+  width: 40%;
+  height: 25%;
+}
