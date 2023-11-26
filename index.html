@@ -1,120 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Landing</title>
-    <meta property="og:title" content="LiamsNotABot | About Me." />
-    <meta property="og:description" content="Landing site." />
-    <meta property="og:image" content="https://i.imgur.com/YTXPXMh.png" />
-    <meta name="theme-color" content="#FFD56C" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body class="is-preload">
-    <div id="bg">
-      <div id="wrapper">
-        <video autoplay muted loop id="bgVideo">
-          <source src="assets/video/bg.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </div>
-    <div id="main">
-      <header id="header">
-        <h1>
-          <div class="name">Liams</div>
-          <div class="nameout">Not</div>
-          <div class="name">A</div>
-          <div class="nameout">Bot</div>
-        </h1>
-        <br /><br />
-        <div class="mainbox">
-          <img class="pfp" src="assets/images/pfp.png" alt="Liam" />
-          <div class="aboutme">
-            20 year old programmer born in Bristol, UK, is unfortunate enough to have lived
-            in London for a very very long time. Likes programming, music, video
-            games, media criticism, philosophising, investigating internet
-            rabbit holes, day dreaming about no longer suffering from insomnia, 
-            cypherpunk slackivism, privacy, and being targeted by people with malicious
-            intentions. Connoisseur of cynical humour, aspiring cybersecurity analyst,
-            and professional shitposter. Enjoys getting under peoples skin with and 
-            sometimes without intending to. Loves everything retro and efficient.
-          </div>
-          <div class="info">
-            <video width="432" height="300" autoplay muted>
-              <source src="assets/video/liam.mp4" />
-            </video>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href="https://www.last.fm/user/LiamsNotABot"
-                  class="icon brands fa-lastfm-square"
-                  ><span class="label">Last.fm</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://steamcommunity.com/profiles/76561199036253653"
-                  class="icon brands fa-steam"
-                  ><span class="label">Steam</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/LiamsNotABot"
-                  class="icon brands fa-twitter"
-                  ><span class="label">Twitter</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://completionist.me/steam/profile/76561199036253653"
-                  class="fa fa-trophy"
-                  ><span class="label">Completionist.me</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/PvtTyphoon/"
-                  class="icon brands fa-github"
-                  ><span class="label">GitHub</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto: hashtyphoon@pm.me"
-                  class="icon solid fa-envelope"
-                  ><span class="label">Email</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.reddit.com/user/TheNinthShade"
-                  class="icon brands fa-reddit-alien"
-                  ><span class="label">Reddit</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://open.spotify.com/user/k2z9y7dtimn5resl20pwdgssq"
-                  class="icon brands fa-spotify"
-                  ><span class="label">Spotify</span></a
-                >
-              </li>
-            </ul>
-            <ul></ul>
-          </nav>
-        <img src="assets/images/donutcat.gif" class="donut">
-        <img src="assets/images/cat.gif" class="cat">
-        <div class="badjoke"></div>
-        <br><br>
-        >Horse walks into bar. 
-        <br>
-        >Barman says why the long face?
+<html lang="en">
+<head>
+    <title>LiamsNotABot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="assets/video/bg.mp4" type="video/mp4">
+        Bro got a brokie browser
+    </video>
+    <div id="terminal-box">
+        <div id="title-bar">
+            <a href="#" id="terminal-icon"><i class="fas fa-terminal"></i></a>
+            <div id="buttons">
+                <a href="#" class="button" id="button-maximize"></a>
+                <a href="#" class="button" id="button-minimize"></a>
+                <a href="#" class="button" id="button-close"></a>
+            </div>
         </div>
+        <div id="terminal-content">
+            <div id="prompt-line1">~</div>
+            <div id="prompt-line2">→ <span id="typed-text"></span><span id="cursor"></span></div>
+            <div id="additional-text" class="hidden">
+                <div>
+                    <div style="color: #61ffca; text-shadow: 0 0 10px #61ffca;">
+                        <pre>
+ __         __     ______     __    __
+/\ \       /\ \   /\  __ \   /\ "-./  \
+\ \ \____  \ \ \  \ \  __ \  \ \ \-./\ \
+ \ \_____\  \ \_\  \ \_\ \_\  \ \_\ \ \_\
+  \/_____/   \/_/   \/_/\/_/   \/_/  \/_/
+                        </pre>
+                    </div>
+
+                    <div style="color: #edecee;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://twitter.com/LiamsNotABot/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/PvtTyphoon/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://steamcommunity.com/profiles/76561199036253653" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-steam"></i>
+                        </a>
+                        <a href="https://www.last.fm/user/LiamsNotABot" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-lastfm"></i>
+                        </a>
+                        <p style="color: #edecee; margin-top: 10px;">
+                            <br>
+                            Hop Out the Pussy I'm 21<br>
+                            I like music, politics, and computers. My hobbies include vibing and chilling.<br>
+                            Email me any slurs you have for me at <a href="mailto:hashtyphoon@pm.me"
+                                style="color: #edecee;">hashtyphoon@pm.me</a>
+                        </p>
+                        <div id="lastfm-info" class="lastfm-info"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </header>
     </div>
     <script src="js/main.js"></script>
-  </body>
+</body>
 </html>
