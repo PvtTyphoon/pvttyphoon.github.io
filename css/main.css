@@ -140,7 +140,7 @@ a i:last-child {
 
 a i:hover {
   color: #ffffff;
-  text-shadow: 0 0 10px #ffca85;
+  text-shadow: 0 0 2px #ffca85;
   transition: text-shadow 0.5s ease-in-out;
 }
 
@@ -171,12 +171,12 @@ a i:hover {
 
 a[href^="mailto"] {
   color: #ffca85;
-  text-shadow: 0 0 10px #ffca85;
+  text-shadow: 0 0 5px #ffca85;
 }
 
 #additional-text p:first-child {
   color: #ff6767;
-  text-shadow: 0 0 20px #fff;
+  text-shadow: 0 0 2px #fff;
 }
 
 @media screen and (max-width: 600px) {
