@@ -69,7 +69,6 @@ function displayLastfmInfo(track) {
       lastfmTextElement.innerHTML = `&nbsp;Was listening to <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${artistName}</span> ${hoursDifference} hours ago`;
     }
   }
-
   lastfmInfo.appendChild(albumCoverElement);
   lastfmInfo.appendChild(lastfmTextElement);
 }
