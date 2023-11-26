@@ -61,6 +61,7 @@ body {
 
 #terminal-icon i {
   font-size: 24px;
+  text-shadow: none;
 }
 
 .button {
@@ -134,11 +135,13 @@ a i:first-child {
 
 a i:last-child {
   margin-right: 16px;
+  transition: text-shadow 0.5s ease-out;
 }
 
 a i:hover {
   color: #ffffff;
   text-shadow: 0 0 10px #ffca85;
+  transition: text-shadow 0.5s ease-in-out;
 }
 
 #lastfm-info {
