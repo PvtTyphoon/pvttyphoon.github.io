@@ -53,7 +53,7 @@ function displayLastfmInfo(track) {
   const lastfmTextElement = document.createElement("p");
 
   if (isNowPlaying) {
-    lastfmTextElement.innerHTML = `&nbsp;Currently listening to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${artistName}</span>`;
+    lastfmTextElement.innerHTML = `&nbsp;Currently listening to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${artistName}</span>`;
   } else {
     const listenedTime = new Date(track.date.uts * 1000);
     const currentTime = new Date();
@@ -61,12 +61,12 @@ function displayLastfmInfo(track) {
       (currentTime - listenedTime) / (1000 * 60),
     );
     if (timeDifference < 10) {
-      lastfmTextElement.innerHTML = `&nbsp;Just listened to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${artistName}</span>`;
+      lastfmTextElement.innerHTML = `&nbsp;Just listened to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${artistName}</span>`;
     } else if (timeDifference < 60) {
-      lastfmTextElement.innerHTML = `&nbsp;Was listening to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${artistName}</span> ${timeDifference} minutes ago`;
+      lastfmTextElement.innerHTML = `&nbsp;Was listening to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${artistName}</span> ${timeDifference} minutes ago`;
     } else {
       const hoursDifference = Math.floor(timeDifference / 60);
-      lastfmTextElement.innerHTML = `&nbsp;Was listening to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${artistName}</span> ${hoursDifference} hours ago`;
+      lastfmTextElement.innerHTML = `&nbsp;Was listening to <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 2px #ff6767;">${artistName}</span> ${hoursDifference} hours ago`;
     }
   }
   lastfmInfo.appendChild(albumCoverElement);
