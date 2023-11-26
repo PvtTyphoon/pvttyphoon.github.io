@@ -27,7 +27,7 @@ body {
 
 #terminal-box {
   width: 50%;
-  height: 65%;
+  height: 67%;
   background-color: rgba(42, 35, 46, 0.7);
   backdrop-filter: blur(13px);
   z-index: 1;
@@ -152,10 +152,18 @@ a i:hover {
   border-radius: 8px;
   overflow: hidden;
   transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 1%;
 }
 
 .lastfm-album-cover:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.lastfm-album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: min-content;
 }
 
 a[href^="mailto"] {
