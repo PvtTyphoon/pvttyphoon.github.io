@@ -27,7 +27,7 @@ body {
 
 #terminal-box {
   width: 50%;
-  height: 67%;
+  height: 70%;
   background-color: rgba(42, 35, 46, 0.7);
   backdrop-filter: blur(13px);
   z-index: 1;
