@@ -165,7 +165,7 @@ a[href^="mailto"] {
 
 @media screen and (max-width: 600px) {
   body {
-      font-size: 80%;
+      font-size: 50%;
  }
   #terminal-box {
       width: 100%;
