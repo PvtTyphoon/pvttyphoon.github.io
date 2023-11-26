@@ -145,6 +145,7 @@ a i:hover {
   display: flex;
   align-items: center;
   margin-top: 16px;
+  text-align: center;
 }
 
 .lastfm-album-cover {
