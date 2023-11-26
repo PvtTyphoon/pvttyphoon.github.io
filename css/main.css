@@ -33,7 +33,7 @@ body {
   z-index: 1;
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #title-bar {
@@ -140,13 +140,14 @@ a i:hover {
   display: flex;
   align-items: center;
   margin-top: 16px;
-  text-align: center;
 }
 
 .lastfm-album-cover {
   border-radius: 8px;
   overflow: hidden;
   transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: auto;
+  width: auto;
 }
 
 .lastfm-album-cover:hover {
@@ -165,7 +166,7 @@ a[href^="mailto"] {
 
 @media screen and (max-width: 600px) {
   body {
-      font-size: 50%;
+      font-size: 80%;
  }
   #terminal-box {
       width: 100%;
