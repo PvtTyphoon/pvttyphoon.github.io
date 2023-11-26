@@ -60,7 +60,6 @@ function displayLastfmInfo(track) {
     const timeDifference = Math.floor(
       (currentTime - listenedTime) / (1000 * 60),
     );
-
     if (timeDifference < 10) {
       lastfmTextElement.innerHTML = `&nbsp;Just listened to <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${songName}</span> by <span style="color: #ff6767; text-shadow: 0 0 10px #ff6767;">${artistName}</span>`;
     } else if (timeDifference < 60) {
