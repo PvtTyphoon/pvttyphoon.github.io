@@ -1,11 +1,18 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  font-family: 'Hack', monospace; 
+  font-family: 'Hack', monospace;
 }
 
 #video-background {
@@ -19,21 +26,21 @@ body {
 }
 
 #terminal-box {
-  width: 50%; 
-  height: 65%; 
-  background-color: rgba(42, 35, 46, 0.7); 
-  backdrop-filter: blur(13px); 
+  width: 50%;
+  height: 65%;
+  background-color: rgba(42, 35, 46, 0.7);
+  backdrop-filter: blur(13px);
   z-index: 1;
   position: relative;
-  border-radius: 10px; 
-  overflow: hidden; 
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 #title-bar {
-  background-color: #1a1e21; 
-  padding: 4px; 
+  background-color: #1a1e21;
+  padding: 4px;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   border-bottom: 1px solid #444;
 }
 
@@ -46,18 +53,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-right: 16px; 
+  margin-right: 16px;
 }
 
 #terminal-icon i {
-  font-size: 24px; 
+  font-size: 24px;
 }
 
 .button {
-  width: 20px; 
-  height: 20px; 
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  margin-left: 7px; 
+  margin-left: 7px;
 }
 
 #button-close {
@@ -73,21 +80,21 @@ body {
 }
 
 #terminal-content {
-  padding: 13px; 
+  padding: 13px;
 }
 
 #prompt-line1 {
-  font-size: 130%; 
-  color: #ff6767; 
+  font-size: 130%;
+  color: #ff6767;
 }
 
 #prompt-line2 {
-  font-size: 130%; 
-  color: #edecee; 
+  font-size: 130%;
+  color: #edecee;
 }
 
 #typed-text {
-  font-size: 130%; 
+  font-size: 130%;
   animation: typing 3s steps(10, end) infinite, blink 0.8s infinite;
 }
 
@@ -99,7 +106,7 @@ body {
 #additional-text {
   margin-top: 26px;
   font-size: 130%;
-  color: #edecee; 
+  color: #edecee;
 }
 
 .hidden {
@@ -107,61 +114,70 @@ body {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 a i {
-  font-size: 30px; 
-  margin: 0 8px; 
-  color: #fff; 
+  font-size: 30px;
+  margin: 0 8px;
+  color: #fff;
 }
 
 a i:first-child {
-  margin-left: 16px; 
+  margin-left: 16px;
 }
 
 a i:last-child {
-  margin-right: 16px; 
+  margin-right: 16px;
 }
 
 a i:hover {
-  color: #ffffff; 
-  text-shadow: 0 0 10px #ffca85; 
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffca85;
 }
 
 #lastfm-info {
   display: flex;
-  align-items: center; 
-  margin-top: 16px; 
+  align-items: center;
+  margin-top: 16px;
   text-align: center;
 }
 
 .lastfm-album-cover {
-  border-radius: 8px; 
-  overflow: hidden; 
-  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .lastfm-album-cover:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 a[href^="mailto"] {
-  color: #ffca85; 
-  text-shadow: 0 0 10px #ffca85; 
+  color: #ffca85;
+  text-shadow: 0 0 10px #ffca85;
 }
 
 #additional-text p:first-child {
-  color: #ff6767; 
-  text-shadow: 0 0 20px #fff; 
+  color: #ff6767;
+  text-shadow: 0 0 20px #fff;
 }
 
 @media screen and (max-width: 600px) {
   body {
-      font-size: 100%;
-  }
-
+      font-size: 80%;
+ }
   #terminal-box {
-      width: 90%;
-  }
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+ }
+  .lastfm-info {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 16px;
+ }
+  .lastfm-album-cover {
+      margin-bottom: 16px;
+ }
 }

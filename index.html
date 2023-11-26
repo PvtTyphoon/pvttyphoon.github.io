@@ -1,72 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <title>LiamsNotABot</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="icon" type="image/x-icon" href="assets/images/icon.ico">
-    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.ico" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
+  <body>
     <video id="video-background" autoplay muted loop>
-        <source src="assets/video/bg.mp4" type="video/mp4">
-        Bro got a brokie browser
+      <source src="assets/video/bg.mp4" type="video/mp4" />
+      Bro got a brokie browser
     </video>
     <div id="terminal-box">
-        <div id="title-bar">
-            <a href="#" id="terminal-icon"><i class="fas fa-terminal"></i></a>
-            <div id="buttons">
-                <a href="#" class="button" id="button-maximize"></a>
-                <a href="#" class="button" id="button-minimize"></a>
-                <a href="#" class="button" id="button-close"></a>
-            </div>
+      <div id="title-bar">
+        <a href="#" id="terminal-icon"><i class="fas fa-terminal"></i></a>
+        <div id="buttons">
+          <a href="#" class="button" id="button-maximize"></a>
+          <a href="#" class="button" id="button-minimize"></a>
+          <a href="#" class="button" id="button-close"></a>
         </div>
-        <div id="terminal-content">
-            <div id="prompt-line1">~</div>
-            <div id="prompt-line2">→ <span id="typed-text"></span><span id="cursor"></span></div>
-            <div id="additional-text" class="hidden">
-                <div>
-                    <div style="color: #61ffca; text-shadow: 0 0 10px #61ffca;">
-                        <pre>
+      </div>
+      <div id="terminal-content">
+        <div id="prompt-line1">~</div>
+        <div id="prompt-line2">
+          → <span id="typed-text"></span><span id="cursor"></span>
+        </div>
+        <div id="additional-text" class="hidden">
+          <div>
+            <div style="color: #61ffca; text-shadow: 0 0 10px #61ffca">
+              <pre>
  __         __     ______     __    __
 /\ \       /\ \   /\  __ \   /\ "-./  \
 \ \ \____  \ \ \  \ \  __ \  \ \ \-./\ \
  \ \_____\  \ \_\  \ \_\ \_\  \ \_\ \ \_\
   \/_____/   \/_/   \/_/\/_/   \/_/  \/_/
-                        </pre>
-                    </div>
-
-                    <div style="color: #edecee;">
-                        &nbsp;&nbsp;&nbsp;
-                        <a href="https://twitter.com/LiamsNotABot/" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://github.com/PvtTyphoon/" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://steamcommunity.com/profiles/76561199036253653" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-steam"></i>
-                        </a>
-                        <a href="https://www.last.fm/user/LiamsNotABot" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-lastfm"></i>
-                        </a>
-                        <p style="color: #edecee; margin-top: 10px;">
-                            <br>
-                            Hop Out the Pussy I'm 21<br>
-                            I like music, politics, and computers. My hobbies include vibing and chilling.<br>
-                            Email me any slurs you have for me at <a href="mailto:hashtyphoon@pm.me"
-                                style="color: #edecee;">hashtyphoon@pm.me</a>
-                        </p>
-                        <div id="lastfm-info" class="lastfm-info"></div>
-                    </div>
-                </div>
+                        </pre
+              >
             </div>
+
+            <div style="color: #edecee">
+              &nbsp;&nbsp;&nbsp;
+              <a
+                href="https://twitter.com/LiamsNotABot/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://github.com/PvtTyphoon/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://steamcommunity.com/profiles/76561199036253653"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-steam"></i>
+              </a>
+              <a
+                href="https://www.last.fm/user/LiamsNotABot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-lastfm"></i>
+              </a>
+              <p style="color: #edecee; margin-top: 10px">
+                <br />
+                Hop Out the Pussy I'm 21<br />
+                I like music, politics, and computers. My hobbies include vibing
+                and chilling.<br />
+                Email me any slurs you have for me at
+                <a href="mailto:hashtyphoon@pm.me" style="color: #edecee"
+                  >hashtyphoon@pm.me</a
+                >
+              </p>
+              <div id="lastfm-info" class="lastfm-info"></div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
