@@ -99,6 +99,23 @@ body {
   color: #edecee;
 }
 
+#pre {
+  color: #61ffca;
+  text-shadow: 0 0 20px #61ffca;
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca, 0 0 80px #61ffca;
+  }
+}
+
 #typed-text {
   font-size: 130%;
   animation: typing 3s steps(10, end) infinite, blink 0.8s infinite;
@@ -140,7 +157,7 @@ a i:last-child {
 
 a i:hover {
   color: #ffffff;
-  text-shadow: 0 0 2px #ffca85;
+  text-shadow: 0 0 20px #ffca85;
   transition: text-shadow 0.5s ease-in-out;
 }
 
@@ -176,7 +193,7 @@ a[href^="mailto"] {
 
 #additional-text p:first-child {
   color: #ff6767;
-  text-shadow: 0 0 2px #fff;
+  text-shadow: 0 0 20px #fff;
 }
 
 @media screen and (max-width: 600px) {
