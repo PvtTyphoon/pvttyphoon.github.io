@@ -102,8 +102,6 @@ body {
 #pre {
   color: #61ffca;
   text-shadow: 0 0 20px #61ffca;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
