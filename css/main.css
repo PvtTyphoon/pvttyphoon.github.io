@@ -232,11 +232,6 @@ a i:hover {
   text-shadow: 0 0 5px #ffca85;
 }
 
-#findme :visited {
-  text-decoration: none;
-  color: #ffca85;
-  text-shadow: 0 0 5px #ffca85;
-}
 
 #additional-text p:first-child {
   color: #ff6767;
