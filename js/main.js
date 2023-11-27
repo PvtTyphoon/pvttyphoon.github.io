@@ -1,4 +1,4 @@
-const typedText = "neofetch";
+const typedText = "fetch";
 const typedTextElement = document.getElementById("typed-text");
 const additionalText = document.getElementById("additional-text");
 const lastfmInfo = document.getElementById("lastfm-info");
