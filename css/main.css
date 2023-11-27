@@ -234,7 +234,6 @@ a i:hover {
 
 
 #findme {
-  color: #ffca85 !important;
   text-shadow: 0 0 5px #ffca85 !important; 
 }
 
@@ -260,4 +259,13 @@ a i:hover {
   .lastfm-album-cover {
       margin-bottom: 16px;
  }
+ #nameflicker {
+  color: #61ffca;
+  text-shadow: 0 0 20px #61ffca;
+  animation: glow 0.5s ease-in-out infinite alternate !important;
+}
+
+#broken {
+  animation: broken-flicker 2s ease-in-out infinite alternate !important;
+}
 }
