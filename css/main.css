@@ -150,6 +150,12 @@ body {
   color: #edecee;
 }
 
+#additional-text {
+  margin-top: 26px;
+  font-size: 130%;
+  color: #edecee;
+}
+
 #nameflicker {
   color: #61ffca;
   text-shadow: 0 0 20px #61ffca;
@@ -169,12 +175,6 @@ body {
 #cursor {
   font-size: 130%;
   animation: blink 0.8s infinite;
-}
-
-#additional-text {
-  margin-top: 26px;
-  font-size: 130%;
-  color: #edecee;
 }
 
 .hidden {
