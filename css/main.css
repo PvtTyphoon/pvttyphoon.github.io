@@ -150,7 +150,7 @@ body {
   color: #edecee;
 }
 
-#pre {
+#nameflicker {
   color: #61ffca;
   text-shadow: 0 0 20px #61ffca;
   animation: glow 1s ease-in-out infinite alternate;
