@@ -102,9 +102,13 @@ body {
 #pre {
   color: #61ffca;
   text-shadow: 0 0 20px #61ffca;
-  -webkit-animation: glow 3s ease-in-out infinite alternate;
-  -moz-animation: glow 3s ease-in-out infinite alternate;
-  animation: glow 3s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#broken {
+  animation: broken-flicker 5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
@@ -113,6 +117,48 @@ body {
   }
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca, 0 0 80px #61ffca;
+  }
+}
+
+@keyframes broken-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
   }
 }
 
