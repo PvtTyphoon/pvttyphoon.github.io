@@ -1,5 +1,14 @@
 @charset "utf-8";
-/* Deathconsciousness Website Stylesheet */
+/* CSS Document */
+
+/*
+
+Deathconsciousness - Have A Nice Life
+Website Stylesheet
+
+Customized for the Deathconsciousness album by Have A Nice Life
+
+*/
 
 * {
 	margin: 0;
@@ -256,14 +265,14 @@ body::after {
 	text-transform: uppercase;
 }
 
-.logo-text .prism {
+.logo-text .logo-death {
 	background: linear-gradient(135deg, var(--text-primary), var(--accent-green));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }
 
-.logo-text .flux {
+.logo-text .logo-consciousness {
 	color: var(--text-secondary);
 	font-weight: 300;
 	margin-left: 5px;
@@ -593,20 +602,20 @@ body::after {
 }
 
 /* Album Overview Section */
-.philosophy-section {
+.album-section {
 	padding: 120px 30px;
 	background: var(--primary-black);
 	position: relative;
 	overflow: hidden;
 }
 
-.philosophy-container {
+.album-container {
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-/* Animated Prism Line */
+/* Animated Decorative Line */
 .prism-line {
 	width: 100%;
 	height: 2px;
@@ -644,7 +653,7 @@ body::after {
 	}
 }
 
-.philosophy-headline {
+.album-headline {
 	font-size: 56px;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -678,7 +687,7 @@ body::after {
 	}
 }
 
-.philosophy-subheading {
+.album-subheading {
 	font-size: 18px;
 	color: var(--text-secondary);
 	max-width: 800px;
@@ -687,7 +696,7 @@ body::after {
 	font-weight: 300;
 }
 
-.philosophy-pillars {
+.album-pillars {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 40px;
@@ -811,7 +820,7 @@ body::after {
 }
 
 /* Particle Effect Background */
-.philosophy-particles {
+.album-particles {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -851,14 +860,14 @@ body::after {
 	}
 }
 
-/* Stats Section with Content */
-.stats-section {
+/* Tracks Section */
+.tracks-section {
 	padding: 120px 30px;
 	background: var(--primary-black);
 	position: relative;
 }
 
-.stats-grid {
+.tracks-grid {
 	max-width: 1400px;
 	margin: 0 auto;
 	display: grid;
@@ -866,7 +875,7 @@ body::after {
 	gap: 30px;
 }
 
-.stat-card {
+.track-card {
 	background: linear-gradient(135deg,
 			var(--carbon-light),
 			var(--carbon-medium));
@@ -881,7 +890,7 @@ body::after {
 	flex-direction: column;
 }
 
-.stat-card::before {
+.track-card::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -895,7 +904,7 @@ body::after {
 	animation: none;
 }
 
-.stat-card:hover::before {
+.track-card:hover::before {
 	animation: slideRight 0.5s ease forwards;
 }
 
@@ -909,13 +918,13 @@ body::after {
 	}
 }
 
-.stat-card:hover {
+.track-card:hover {
 	transform: translateY(-5px);
 	border-color: var(--accent-green);
 	box-shadow: 0 15px 35px rgba(26, 160, 109, 0.25);
 }
 
-.stat-icon {
+.track-icon {
 	width: 60px;
 	height: 60px;
 	background: linear-gradient(135deg, var(--accent-green), var(--accent-sage));
@@ -930,11 +939,11 @@ body::after {
 	flex-shrink: 0;
 }
 
-.stat-number {
+.track-number {
 	display: none;
 }
 
-.stat-label {
+.track-label {
 	font-size: 19px;
 	color: var(--text-primary);
 	text-transform: none;
@@ -944,7 +953,7 @@ body::after {
 	line-height: 1.4;
 }
 
-.stat-description {
+.track-description {
 	font-size: 14px;
 	color: var(--text-secondary);
 	line-height: 1.75;
@@ -953,15 +962,15 @@ body::after {
 	flex-grow: 1;
 }
 
-/* Enhanced Skills Section - Technical Arsenal */
-.skills-section {
+/* Sound Elements Section */
+.sound-section {
 	padding: 120px 30px;
 	background: var(--primary-black);
 	position: relative;
 	overflow: hidden;
 }
 
-.skills-container {
+.sound-container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -991,8 +1000,8 @@ body::after {
 	line-height: 1.6;
 }
 
-/* Hexagonal Skills Grid */
-.skills-hexagon-grid {
+/* Sound Elements Grid */
+.sound-elements-grid {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1000,7 +1009,7 @@ body::after {
 	margin-top: 60px;
 }
 
-.skill-hexagon {
+.sound-element {
 	width: 200px;
 	height: 230px;
 	position: relative;
@@ -1009,7 +1018,7 @@ body::after {
 	transition: all 0.3s ease;
 }
 
-.skill-hexagon:hover {
+.sound-element:hover {
 	transform: translateY(-10px);
 }
 
@@ -1024,7 +1033,7 @@ body::after {
 	border: 2px solid var(--metal-dark);
 }
 
-.skill-hexagon:hover .hexagon-inner {
+.sound-element:hover .hexagon-inner {
 	border-color: var(--accent-green);
 	box-shadow: 0 0 30px rgba(26, 160, 109, 0.5);
 }
@@ -1043,7 +1052,7 @@ body::after {
 	padding: 20px;
 }
 
-.skill-icon-hex {
+.sound-icon {
 	font-size: 48px;
 	margin-bottom: 15px;
 	color: var(--accent-green);
@@ -1062,7 +1071,7 @@ body::after {
 	}
 }
 
-.skill-name-hex {
+.sound-name {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1072,7 +1081,7 @@ body::after {
 	text-align: center;
 }
 
-.skill-level {
+.sound-level {
 	width: 100%;
 	height: 4px;
 	background: var(--carbon-dark);
@@ -1081,7 +1090,7 @@ body::after {
 	position: relative;
 }
 
-.skill-level-fill {
+.sound-level-fill {
 	height: 100%;
 	background: linear-gradient(90deg, var(--accent-green-dark), var(--accent-green));
 	border-radius: 2px;
@@ -1095,7 +1104,7 @@ body::after {
 	}
 }
 
-.skill-percentage-hex {
+.sound-percentage {
 	font-size: 14px;
 	color: var(--text-secondary);
 	margin-top: 8px;
@@ -1103,7 +1112,7 @@ body::after {
 }
 
 /* Skill Categories Tabs */
-.skill-categories {
+.sound-categories {
 	display: flex;
 	justify-content: center;
 	gap: 20px;
@@ -1604,7 +1613,7 @@ a.info-item {
 
 /* Responsive Design */
 @media (max-width: 1400px) {
-	.stats-grid {
+	.tracks-grid {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 25px;
 	}
@@ -1633,7 +1642,7 @@ a.info-item {
 		font-size: 13px;
 	}
 
-	.philosophy-pillars {
+	.album-pillars {
 		grid-template-columns: 1fr;
 	}
 
@@ -1645,7 +1654,7 @@ a.info-item {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.stats-grid {
+	.tracks-grid {
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 25px;
 	}
@@ -1756,7 +1765,7 @@ a.info-item {
 		height: 10px;
 	}
 
-	.philosophy-headline {
+	.album-headline {
 		font-size: 36px;
 	}
 
@@ -1764,12 +1773,12 @@ a.info-item {
 		font-size: 32px;
 	}
 
-	.stats-grid {
+	.tracks-grid {
 		grid-template-columns: 1fr;
 		gap: 25px;
 	}
 
-	.stat-card {
+	.track-card {
 		padding: 28px 22px;
 	}
 
@@ -1783,33 +1792,33 @@ a.info-item {
 		font-size: 22px;
 	}
 
-	.stat-icon {
+	.track-icon {
 		width: 50px;
 		height: 50px;
 		font-size: 24px;
 		margin-bottom: 15px;
 	}
 
-	.stat-label {
+	.track-label {
 		font-size: 17px;
 		margin-bottom: 14px;
 	}
 
-	.stat-description {
+	.track-description {
 		font-size: 13px;
 	}
 
-	.skill-hexagon {
+	.sound-element {
 		width: 150px;
 		height: 170px;
 		margin: 20px 5px;
 	}
 
-	.skill-icon-hex {
+	.sound-icon {
 		font-size: 36px;
 	}
 
-	.skill-name-hex {
+	.sound-name {
 		font-size: 14px;
 	}
 
@@ -1821,7 +1830,7 @@ a.info-item {
 		-webkit-tap-highlight-color: rgba(26, 160, 109, 0.35);
 	}
 
-	.skill-categories {
+	.sound-categories {
 		gap: 12px;
 		padding: 0 10px;
 	}
@@ -1907,7 +1916,7 @@ a.info-item {
 		font-size: 12px;
 	}
 
-	.philosophy-headline {
+	.album-headline {
 		font-size: 28px;
 		letter-spacing: 2px;
 	}
@@ -1916,12 +1925,12 @@ a.info-item {
 		font-size: 26px;
 	}
 
-	.stats-grid {
+	.tracks-grid {
 		grid-template-columns: 1fr;
 		gap: 20px;
 	}
 
-	.stat-card {
+	.track-card {
 		padding: 24px 20px;
 	}
 
