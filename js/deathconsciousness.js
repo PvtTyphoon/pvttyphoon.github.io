@@ -359,19 +359,16 @@ Customized for the Deathconsciousness album by Have A Nice Life
         // Update active navigation based on current page
         function updateActiveNav() {
             const navLinks = document.querySelectorAll('.nav-link');
-            const pathname = window.location.pathname;
-            const currentFile = window.location.pathname.split('/').pop() || 'index.html';
-            const isHome = pathname === '/' || pathname.endsWith('/index.html') || currentFile === 'index.html' || pathname.endsWith('index.html');
-            const isAbout = pathname.includes('/about') || pathname.endsWith('/about/') || currentFile === 'index.html' && pathname.includes('about');
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
             
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 const href = link.getAttribute('href');
                 
                 // Check if this link matches current page
-                if (isHome && (href === '/' || href === 'index.html' || href === '../index.html' || href === 'home.html' || href === '#home')) {
+                if (currentPage === 'index.html' && (href === 'index.html' || href === 'home.html' || href === '#home')) {
                     link.classList.add('active');
-                } else if (isAbout && (href === '/about' || href === 'about/' || href === 'about/index.html' || (href === 'index.html' && pathname.includes('about')) || href === '#about')) {
+                } else if (currentPage === 'about.html' && (href === 'about.html' || href === '#about')) {
                     link.classList.add('active');
                 }
             });
