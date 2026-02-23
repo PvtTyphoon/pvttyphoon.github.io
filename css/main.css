@@ -1,0 +1,271 @@
+@keyframes glow {
+  from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca, 0 0 80px #61ffca;
+ }
+}
+
+@keyframes broken-flicker {
+  0% {
+      opacity:0.1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  2% {
+      opacity:0.1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  4% {
+      opacity:1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  19% {
+      opacity:1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  21% {
+      opacity:0.1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  23% {
+      opacity:1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  80% {
+      opacity:1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  83% {
+      opacity:0.4;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+  87% {
+      opacity:1;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #61ffca, 0 0 40px #61ffca, 0 0 50px #61ffca, 0 0 60px #61ffca, 0 0 70px #61ffca;
+ }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Hack', monospace;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#terminal-box {
+  width: 50%;
+  height: 70%;
+  background-color: rgba(42, 35, 46, 0.7);
+  backdrop-filter: blur(13px);
+  z-index: 1;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#title-bar {
+  background-color: #1a1e21;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#buttons {
+  display: flex;
+  padding: 4px 8px 4px 0;
+}
+
+#terminal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 16px;
+}
+
+#terminal-icon i {
+  font-size: 24px;
+  text-shadow: none;
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 7px;
+}
+
+#button-close {
+  background-color: #ff4745;
+}
+
+#button-minimize {
+  background-color: #b700e9;
+}
+
+#button-maximize {
+  background-color: #fdc91d;
+}
+
+#terminal-content {
+  padding: 13px;
+  overflow-y: auto;
+  max-height: calc(100% - 38px);
+}
+
+#prompt-line1 {
+  font-size: 130%;
+  color: #ff6767;
+}
+
+#prompt-line2 {
+  font-size: 130%;
+  color: #edecee;
+}
+
+#additional-text {
+  margin-top: 26px;
+  font-size: 130%;
+  color: #edecee;
+}
+
+#nameflicker {
+  color: #61ffca;
+  text-shadow: 0 0 20px #61ffca;
+  animation: glow 1s ease-in-out infinite alternate !important;
+}
+
+#broken {
+  animation: broken-flicker 5s ease-in-out infinite alternate !important;
+}
+
+#typed-text {
+  font-size: 130%;
+  animation: typing 3s steps(10, end) infinite, blink 0.8s infinite;
+}
+
+#cursor {
+  font-size: 130%;
+  animation: blink 0.8s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a i {
+  font-size: 30px;
+  margin: 0 8px;
+  color: #fff;
+}
+
+a i:first-child {
+  margin-left: 16px;
+}
+
+a i:last-child {
+  margin-right: 16px;
+  transition: text-shadow 0.5s ease-out;
+}
+
+a i:hover {
+  color: #ffffff;
+  text-shadow: 0 0 20px #ffca85;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+#lastfm-info {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.lastfm-album-cover {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 1%;
+}
+
+.lastfm-album-cover:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.lastfm-album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: min-content;
+}
+
+#email {
+  color: #ffca85;
+  text-shadow: 0 0 5px #ffca85;
+}
+
+
+#findme {
+  text-shadow: 0 0 5px #ffca85 !important; 
+}
+
+#additional-text p:first-child {
+  color: #ff6767;
+  text-shadow: 0 0 20px #fff;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+      font-size: 80%;
+ }
+  #terminal-box {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+ }
+  .lastfm-info {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 16px;
+ }
+  .lastfm-album-cover {
+      margin-bottom: 16px;
+ }
+ #nameflicker {
+  color: #61ffca;
+  text-shadow: 0 0 20px #61ffca;
+  animation: glow 0.5s ease-in-out infinite alternate !important;
+}
+
+#broken {
+  animation: broken-flicker 2s ease-in-out infinite alternate !important;
+}
+}
